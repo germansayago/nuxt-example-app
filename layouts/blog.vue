@@ -1,15 +1,19 @@
 <template>
   <div class="container">
-    <div class="d-flex justify-content-between align-item-center">
-      <h1><nuxt-link to="/">My Aplication</nuxt-link></h1>
-      <div class="d-flex">
-        <div><nuxt-link to="/about">About</nuxt-link></div>
-        <div><nuxt-link to="/team">Team</nuxt-link></div>
-      </div>
-    </div>
+    <main-navigation></main-navigation>
     <nuxt class="markdown-body" />
   </div>
 </template>
+
+<script>
+import MainNavigation from '../components/MainNavigation.vue'
+
+export default {
+  components: {
+    MainNavigation
+  }
+}
+</script>
 
 <style>
 @import url("https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/3.0.1/github-markdown.css");
